@@ -1,0 +1,36 @@
+{
+  "name": "Uno spazio di ascolto",
+  "short_name": "Ascolto",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FAFAF7",
+  "theme_color": "#6F8D4F",
+  "icons": [
+    {
+      "src": "favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

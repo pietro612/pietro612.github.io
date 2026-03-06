@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perché esiste – Uno spazio di ascolto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="benvenuto.html">Benvenuto</a>
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="come-funziona.html">Come funziona</a>
+        <a href="perche-esiste.html">Perché esiste</a>
+        <a href="scrivi.html">Scrivi una domanda</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contatto.html">Contatto</a>
+
+        <!-- Pulsante audio con icona -->
+        <div class="sidebar-audio">
+            <button id="play-audio" class="audio-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 9v6"></path>
+                    <path d="M9 7v10"></path>
+                    <path d="M13 5v14"></path>
+                    <path d="M17 7v10"></path>
+                </svg>
+            </button>
+
+            <audio id="audio-player" src="audio/musica.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero" style="background-image: url('immagini/hero-perche.jpg');">
+        <div class="hero-content">
+            <h1>Perché esiste</h1>
+            <p>Uno spazio nato dall’ascolto delle domande.</p>
+        </div>
+    </div>
+
+    <!-- CONTENUTO -->
+    <section class="pagina-testo">
+
+        <h2>Un bisogno reale</h2>
+        <p>
+            Molti giovani vivono pensieri, domande, emozioni che non sanno dove portare.
+        </p>
+
+        <h3>Un luogo sicuro</h3>
+        <p>
+            Questo spazio nasce per offrire un punto di appoggio, semplice e rispettoso.
+        </p>
+
+        <h3>Un cammino possibile</h3>
+        <p>
+            Non per dare risposte pronte, ma per accompagnare ciò che emerge.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Uno spazio di ascolto, con calma e presenza.</p>
+        <p><a href="contatto.html">Contattami</a></p>
+    </footer>
+
+    <!-- SCRIPT AUDIO -->
+    <script>
+    document.getElementById("play-audio").addEventListener("click", function() {
+        const audio = document.getElementById("audio-player");
+        audio.play();
+    });
+    </script>
+
+</body>
+</html>
+<div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="benvenuto.html">Benvenuto</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="come-funziona.html">Come funziona</a>
+    <a href="perche-esiste.html">Perché esiste</a>
+    <a href="scrivi.html">Scrivi una domanda</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contatto.html">Contatto</a>
+    <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
+
+    <div class="sidebar-audio">
+        <button id="play-audio" class="audio-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 9v6"></path>
+                <path d="M9 7v10"></path>
+                <path d="M13 5v14"></path>
+                <path d="M17 7v10"></path>
+            </svg>
+        </button>
+        <audio id="audio-player" src="audio/musica.mp3"></audio>
+    </div>
+</div>

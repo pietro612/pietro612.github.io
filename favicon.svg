@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sfondo verde profondo con angoli arrotondati -->
+  <rect width="512" height="512" rx="40" ry="40" fill="#6F8D4F"/>
+
+  <!-- Punto di luce leggermente alto, diametro 32%, gradiente verticale -->
+  <defs>
+    <linearGradient id="luce" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F3EC"/>
+      <stop offset="100%" stop-color="#F3EEE6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cerchio (punto di luce) -->
+  <circle 
+    cx="256" 
+    cy="210" 
+    r="82" 
+    fill="url(#luce)"
+  />
+</svg>
+
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="40" ry="40" fill="#6F8D4F"/>
+  <defs>
+    <linearGradient id="luce" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F3EC"/>
+      <stop offset="100%" stop-color="#F3EEE6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="210" r="82" fill="url(#luce)"/>
+</svg>

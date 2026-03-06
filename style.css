@@ -1,0 +1,290 @@
+/* ------------------------------
+   FONT
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+/* ------------------------------
+   RESET DI BASE
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------
+   STRUTTURA GENERALE
+------------------------------ */
+
+body {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* ------------------------------
+   SIDEBAR
+------------------------------ */
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #245f89;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 12px;
+    color: #245f89;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar a:hover {
+    opacity: 0.7;
+}
+
+/* ------------------------------
+   PULSANTE AUDIO
+------------------------------ */
+
+.sidebar-audio {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.audio-icon {
+    background-color: #245f89;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.audio-icon:hover {
+    background-color: #1a4a6b;
+}
+
+.audio-icon svg {
+    display: block;
+}
+
+#audio-player {
+    display: none;
+}
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+    margin-left: 250px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    position: relative;
+}
+
+/* Overlay uniforme */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 95, 137, 0.25);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* ------------------------------
+   ANIMAZIONI MORBIDE
+------------------------------ */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1,
+.hero-content p,
+.pagina-testo h2,
+.pagina-testo h3 {
+    animation: fadeUp 0.8s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* ------------------------------
+   CONTENUTO PAGINA
+------------------------------ */
+
+.pagina-testo {
+    margin-left: 250px;
+    padding: 40px;
+    max-width: 800px;
+}
+
+.pagina-testo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #245f89;
+}
+
+.pagina-testo h3 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #245f89;
+}
+
+.pagina-testo p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+.footer {
+    margin-left: 250px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #245f89;
+    text-decoration: none;
+}
+
+/* ------------------------------
+   VERSIONE MOBILE RESPONSIVE
+------------------------------ */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    .hero,
+    .pagina-testo,
+    .footer {
+        margin-left: 0;
+    }
+
+    .hero {
+        height: 220px;
+        padding: 30px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .pagina-testo {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero {
+        height: 180px;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .sidebar a {
+        margin: 6px 8px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ------------------------------
+   DARK MODE DELICATA
+------------------------------ */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #1e1e1e;
+        color: #e6e6e6;
+    }
+
+    .sidebar {
+        background-color: #2a2a2a;
+        border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+        color: #8bb7d6;
+    }
+
+    .footer {
+        background-color: #2a2a2a;
+        border-top: 1px solid #444;
+    }
+
+    .audio-icon {
+        background-color: #245f89;
+    }
+}
