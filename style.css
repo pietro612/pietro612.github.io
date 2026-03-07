@@ -292,3 +292,13 @@ body {
   display: block;
   margin: 0 auto;
 }
+   /* Immagine intera sui computer */
+@media (min-width: 900px) {
+    .hero {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
