@@ -434,6 +434,33 @@ img {
         max-width: 100%;
     }
 }
+   /* Spazio morbido sotto la HERO su mobile */
+@media (max-width: 768px) {
+    .hero {
+        margin-bottom: 35px;
+    }
+}
+
+/* Spazio sopra il primo titolo della pagina */
+.pagina-testo h2:first-of-type {
+    margin-top: 45px;
+}
+
+/* Titoli più distesi su mobile */
+@media (max-width: 768px) {
+    .pagina-testo h2 {
+        margin-bottom: 28px;
+    }
+}
+
+/* Paragrafi più ariosi su mobile */
+@media (max-width: 768px) {
+    .pagina-testo p {
+        margin-bottom: 24px;
+        line-height: 1.7;
+    }
+}
+
 
 
 
