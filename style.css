@@ -299,6 +299,13 @@ body {
         background-repeat: no-repeat;
         background-position: center;
     }
+}.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
+
 
 
