@@ -352,7 +352,57 @@ body {
         margin-left: 0;
         padding: 20px;
     }
+}/* ------------------------------
+   VERSIONE MOBILE
+------------------------------ */
+@media (max-width: 768px) {
+
+    /* Sidebar diventa un menu in alto */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    /* HERO si adatta allo schermo */
+    .hero {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Testo della hero */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Contenuto pagina */
+    .pagina-testo {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
 }
+
 
 
 
