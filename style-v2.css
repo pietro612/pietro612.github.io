@@ -142,7 +142,16 @@ body {
 
 .hero-content h1,
 .hero-content p,
-.pagina-testo h2,
+.pagina-testo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #245f89;
+}
+
+/* Spazio morbido tra HERO e primo titolo */
+.pagina-testo h2:first-of-type {
+    margin-top: 30px;
+}
 .pagina-testo h3 {
     animation: fadeUp 0.8s ease-out;
 }
@@ -415,6 +424,7 @@ img {
         max-width: 100%;
     }
 }
+
 
 
 
