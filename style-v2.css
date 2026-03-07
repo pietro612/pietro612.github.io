@@ -284,9 +284,17 @@ body {
         border-top: 1px solid #444;
     }
 
-    .audio-icon {
+        .audio-icon {
         background-color: #245f89;
-    }img {
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
   max-width: 100%;
   height: auto;
   display: block;
@@ -402,6 +410,7 @@ body {
         max-width: 100%;
     }
 }
+
 
 
 
