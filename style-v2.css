@@ -184,6 +184,11 @@ body {
     font-size: 1.05rem;
 }
 
+/* 🌿 Spazio morbido tra HERO e primo titolo */
+.pagina-testo h2:first-of-type {
+    margin-top: 30px;
+}
+
 /* ------------------------------
    FOOTER
 ------------------------------ */
@@ -410,6 +415,7 @@ img {
         max-width: 100%;
     }
 }
+
 
 
 
