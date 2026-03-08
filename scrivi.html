@@ -3,55 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home – Uno spazio di ascolto</title>
+    <title>Scrivi una domanda – Uno spazio di ascolto</title>
     <link rel="stylesheet" href="style-v2.css">
 </head>
 
 <body>
 
     <!-- SIDEBAR -->
-   <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="index.html">Home</a>
-    <a href="benvenuto.html">Benvenuto</a>
-    <a href="chi-sono.html">Chi sono</a>
-    <a href="come-funziona.html">Come funziona</a>
-    <a href="perche-esiste.html">Perché esiste</a>
-    <a href="scrivi.html">Scrivi una domanda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contatto.html">Contatto</a>
-    <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="benvenuto.html">Benvenuto</a>
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="come-funziona.html">Come funziona</a>
+        <a href="perche-esiste.html">Perché esiste</a>
+        <a href="scrivi.html">Scrivi una domanda</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contatto.html">Contatto</a>
+        <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
 
-    <div class="sidebar-audio">
-        <button id="play-audio" class="audio-icon">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 9v6"></path>
-                <path d="M9 7v10"></path>
-                <path d="M13 5v14"></path>
-                <path d="M17 7v10"></path>
-            </svg>
-        </button>
-        <audio id="audio-player" src="audio/musica.mp3"></audio>
+        <div class="sidebar-audio">
+            <button id="play-audio" class="audio-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 9v6"></path>
+                    <path d="M9 7v10"></path>
+                    <path d="M13 5v14"></path>
+                    <path d="M17 7v10"></path>
+                </svg>
+            </button>
+            <audio id="audio-player" src="audio/musica.mp3"></audio>
+        </div>
     </div>
-</div>
 
     <!-- HERO -->
     <div class="hero">
-        <img src="immagini/hero-home.jpg" alt="Immagine Home">
+        <img src="immagini/hero-scrivi.jpg" alt="Scrivi una domanda">
         <div class="hero-content">
-            <h1>Home</h1>
-            <p>Un luogo semplice, per iniziare da dove sei.</p>
+            <h1>Scrivi una domanda</h1>
+            <p>Un piccolo spazio dove puoi iniziare da ciò che senti.</p>
         </div>
     </div>
 
     <!-- CONTENUTO -->
     <section class="pagina-testo">
 
-        <h2>Uno spazio di ascolto</h2>
+        <h2>Da dove vuoi partire</h2>
         <p>
-            Questo è un luogo dove puoi fermarti, respirare, e trovare un punto di appoggio.
-            Un passo alla volta, senza fretta, senza giudizio.
+            Puoi scrivere una domanda, un dubbio, un pensiero che ti abita.
+            Non serve trovare le parole giuste: basta iniziare.
         </p>
+
+        <form action="grazie.html" method="GET" class="form-contatto">
+            <label for="messaggio">Il tuo messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="6" required></textarea>
+
+            <button type="submit" class="bottone-invia">Invia</button>
+        </form>
 
     </section>
 
@@ -71,4 +78,3 @@
 
 </body>
 </html>
-
