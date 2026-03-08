@@ -81,10 +81,6 @@ body {
     background-color: #1a4a6b;
 }
 
-.audio-icon svg {
-    display: block;
-}
-
 #audio-player {
     display: none;
 }
@@ -95,19 +91,21 @@ body {
 
 .hero {
     margin-left: 250px;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 40px;
-    color: white;
     position: relative;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-/* Overlay uniforme */
+/* Overlay */
 .hero::after {
     content: "";
     position: absolute;
@@ -125,47 +123,6 @@ body {
     z-index: 2;
 }
 
-/* ------------------------------
-   ANIMAZIONI MORBIDE
------------------------------- */
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animazioni */
-.hero-content h1,
-.hero-content p {
-    animation: fadeUp 0.8s ease-out;
-}
-
-/* Titoli della pagina */
-.pagina-testo h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #245f89;
-    animation: fadeUp 0.8s ease-out;
-}
-
-/* Spazio morbido tra HERO e primo titolo */
-.pagina-testo h2:first-of-type {
-    margin-top: 30px;
-}
-
-.pagina-testo h3 {
-    font-size: 1.3rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #245f89;
-    animation: fadeUp 0.8s ease-out;
-}
 .hero-content h1 {
     font-size: 2.4rem;
     margin-bottom: 10px;
@@ -173,6 +130,20 @@ body {
 
 .hero-content p {
     font-size: 1.2rem;
+}
+
+/* ------------------------------
+   ANIMAZIONI
+------------------------------ */
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1,
+.hero-content p {
+    animation: fadeUp 0.8s ease-out;
 }
 
 /* ------------------------------
@@ -189,6 +160,12 @@ body {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #245f89;
+    animation: fadeUp 0.8s ease-out;
+}
+
+/* Spazio sopra il primo titolo */
+.pagina-testo h2:first-of-type {
+    margin-top: 45px;
 }
 
 .pagina-testo h3 {
@@ -196,16 +173,12 @@ body {
     margin-top: 30px;
     margin-bottom: 10px;
     color: #245f89;
+    animation: fadeUp 0.8s ease-out;
 }
 
 .pagina-testo p {
     margin-bottom: 20px;
     font-size: 1.05rem;
-}
-
-/* 🌿 Spazio morbido tra HERO e primo titolo */
-.pagina-testo h2:first-of-type {
-    margin-top: 30px;
 }
 
 /* ------------------------------
@@ -226,11 +199,12 @@ body {
 }
 
 /* ------------------------------
-   VERSIONE MOBILE RESPONSIVE
+   VERSIONE MOBILE (FINALE, PULITA)
 ------------------------------ */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
+    /* Sidebar */
     .sidebar {
         position: relative;
         width: 100%;
@@ -244,47 +218,49 @@ body {
     .sidebar a {
         display: inline-block;
         margin: 8px 10px;
+        font-size: 0.95rem;
     }
 
-    .hero,
-    .pagina-testo,
-    .footer {
-        margin-left: 0;
-    }
-
+    /* HERO */
     .hero {
-        height: 220px;
-        padding: 30px 20px;
+        margin-left: 0;
+        padding: 20px;
+        margin-bottom: 35px;
     }
 
     .hero-content h1 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Contenuto */
     .pagina-testo {
+        margin-left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .pagina-testo h2 {
+        margin-bottom: 28px;
+    }
+
+    .pagina-testo p {
+        margin-bottom: 24px;
+        line-height: 1.7;
+    }
+
+    /* Footer */
+    .footer {
+        margin-left: 0;
         padding: 25px;
     }
 }
 
-@media (max-width: 500px) {
-
-    .hero {
-        height: 180px;
-        padding: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 1.6rem;
-    }
-
-    .sidebar a {
-        margin: 6px 8px;
-        font-size: 0.95rem;
-    }
-}
-
 /* ------------------------------
-   DARK MODE DELICATA
+   DARK MODE
 ------------------------------ */
 
 @media (prefers-color-scheme: dark) {
@@ -307,171 +283,4 @@ body {
         background-color: #2a2a2a;
         border-top: 1px solid #444;
     }
-
-        .audio-icon {
-        background-color: #245f89;
-    }
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-   /* Immagine intera sui computer */
-@media (min-width: 900px) {
-    .hero {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-/* ------------------------------
-   VERSIONE MOBILE
------------------------------- */
-@media (max-width: 768px) {
-
-    /* Sidebar diventa un menu in alto */
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .sidebar a {
-        display: inline-block;
-        margin: 8px 10px;
-        font-size: 0.95rem;
-    }
-
-    /* HERO si adatta allo schermo */
-    .hero {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    .hero img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Testo della hero */
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    /* Contenuto pagina */
-    .pagina-testo {
-        margin-left: 0;
-        padding: 20px;
-    }
-}/* ------------------------------
-   VERSIONE MOBILE
------------------------------- */
-@media (max-width: 768px) {
-
-    /* Sidebar diventa un menu in alto */
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .sidebar a {
-        display: inline-block;
-        margin: 8px 10px;
-        font-size: 0.95rem;
-    }
-
-    /* HERO si adatta allo schermo */
-    .hero {
-        margin-left: 0;
-        padding: 20px;
-    }
-
-    .hero img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* Testo della hero */
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    /* Contenuto pagina */
-    .pagina-testo {
-        margin-left: 0;
-        padding: 20px;
-        max-width: 100%;
-    }
-}
-   /* Spazio morbido sotto la HERO su mobile */
-@media (max-width: 768px) {
-    .hero {
-        margin-bottom: 35px;
-    }
-}
-
-/* Spazio sopra il primo titolo della pagina */
-.pagina-testo h2:first-of-type {
-    margin-top: 45px;
-}
-
-/* Titoli più distesi su mobile */
-@media (max-width: 768px) {
-    .pagina-testo h2 {
-        margin-bottom: 28px;
-    }
-}
-
-/* Paragrafi più ariosi su mobile */
-@media (max-width: 768px) {
-    .pagina-testo p {
-        margin-bottom: 24px;
-        line-height: 1.7;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
