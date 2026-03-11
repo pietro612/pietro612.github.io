@@ -13,12 +13,12 @@
     <meta property="og:description" content="Un modo semplice per metterti in contatto, senza formalità e senza pressione.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pietro612.github.io/contatto.html">
-    <meta property="og:image" content="https://pietro612.github.io/hero-benvenuto.jpg">
+    <meta property="og:image" content="https://pietro612.github.io/immagini/hero-contatto.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contatto – Scrivimi quando vuoi">
     <meta name="twitter:description" content="Un modo semplice per metterti in contatto, senza formalità e senza pressione.">
-    <meta name="twitter:image" content="https://pietro612.github.io/hero-benvenuto.jpg">
+    <meta name="twitter:image" content="https://pietro612.github.io/immagini/hero-contatto.jpg">
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style-v2.css">
@@ -28,38 +28,38 @@
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="index.html">Home</a>
-    <a href="benvenuto.html">Benvenuto</a>
-    <a href="chi-sono.html">Chi sono</a>
-    <a href="come-funziona.html">Come funziona</a>
-    <a href="perche-esiste.html">Perché esiste</a>
-    <a href="scrivi.html">Scrivi una domanda</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contatto.html">Contatto</a>
-    <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="benvenuto.html">Benvenuto</a>
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="come-funziona.html">Come funziona</a>
+        <a href="perche-esiste.html">Perché esiste</a>
+        <a href="scrivi.html">Scrivi una domanda</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contatto.html">Contatto</a>
+        <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
 
-    <div class="sidebar-audio">
-        <button id="play-audio" class="audio-icon">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 9v6"></path>
-                <path d="M9 7v10"></path>
-                <path d="M13 5v14"></path>
-                <path d="M17 7v10"></path>
-            </svg>
-        </button>
-        <audio id="audio-player" src="audio/musica.mp3"></audio>
+        <div class="sidebar-audio">
+            <button id="play-audio" class="audio-icon">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 9v6"></path>
+                    <path d="M9 7v10"></path>
+                    <path d="M13 5v14"></path>
+                    <path d="M17 7v10"></path>
+                </svg>
+            </button>
+            <audio id="audio-player" src="audio/musica.mp3"></audio>
+        </div>
     </div>
-</div>
 
     <!-- HERO -->
-<div class="hero">
-    <img src="immagini/hero-contatto.jpg" alt="Mano tesa">
-    <div class="hero-content">
-        <h1>Contatto</h1>
-        <p>Una mano tesa, quando ne hai bisogno.</p>
+    <div class="hero">
+        <img src="immagini/hero-contatto.jpg" alt="Una mano tesa, un invito a metterti in contatto con calma">
+        <div class="hero-content">
+            <h1>Contatto</h1>
+            <p>Una mano tesa, quando senti il bisogno di parlare con calma.</p>
+        </div>
     </div>
-</div>
 
     <!-- CONTENUTO -->
     <section class="pagina-testo">
@@ -70,12 +70,15 @@
             Risponderò con calma, con rispetto, senza giudizio.
         </p>
 
-        <!-- FORM CORRETTO CON FORMSPREE -->
-        <form action="https://formspree.io/f/xvzwobdy" method="POST">
-            <label for="messaggio">Il tuo messaggio</label>
-            <textarea id="messaggio" name="message" required></textarea>
+        <!-- FORM -->
+        <form action="https://formspree.io/f/xvzwobdy" method="POST" class="form-contatto">
 
-            <button type="submit">Invia</button>
+            <label for="messaggio">Il tuo messaggio</label>
+            <textarea id="messaggio" name="message" rows="6" required></textarea>
+
+            <input type="hidden" name="_redirect" value="https://pietro612.github.io/grazie.html">
+
+            <button type="submit" class="bottone-invia">Invia</button>
         </form>
 
     </section>
@@ -96,9 +99,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
