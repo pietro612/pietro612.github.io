@@ -99,7 +99,7 @@ body {
     position: relative;
 }
 .hero img {
-  max-height: 40vh;
+  max-height: 50vh;
   width: 100%;
   object-fit: cover;
 }
@@ -283,6 +283,7 @@ body {
         border-top: 1px solid #444;
     }
 }
+
 
 
 
