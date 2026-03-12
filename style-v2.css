@@ -102,7 +102,7 @@ body {
 .hero img {
 /* Riduce l’altezza delle hero senza rovinare le immagini */
 .hero img {
-  max-height: 55vh;
+  max-height: 50vh;
   width: 100%;
   object-fit: cover;
 }
@@ -286,4 +286,5 @@ body {
         border-top: 1px solid #444;
     }
 }
+
 
