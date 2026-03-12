@@ -100,9 +100,11 @@ body {
 }
 
 .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Riduce l’altezza delle hero senza rovinare le immagini */
+.hero img {
+  max-height: 55vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Overlay */
@@ -284,3 +286,4 @@ body {
         border-top: 1px solid #444;
     }
 }
+
