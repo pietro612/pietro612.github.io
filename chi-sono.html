@@ -13,12 +13,12 @@
     <meta property="og:description" content="Una presentazione semplice e sincera, per conoscere il mio modo di ascoltare e accompagnare.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pietro612.github.io/chi-sono.html">
-    <meta property="og:image" content="https://pietro612.github.io/hero-chi-sono.jpg">
+    <meta property="og:image" content="https://pietro612.github.io/immagini/hero-chisono.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Chi sono">
     <meta name="twitter:description" content="Una presentazione semplice e sincera, per conoscere il mio modo di ascoltare e accompagnare.">
-    <meta name="twitter:image" content="https://pietro612.github.io/hero-chi-sono.jpg">
+    <meta name="twitter:image" content="https://pietro612.github.io/immagini/hero-chisono.jpg">
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style-v2.css">
@@ -26,77 +26,38 @@
 
 <body>
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <a href="index.html">Home</a>
-        <a href="benvenuto.html">Benvenuto</a>
-        <a href="chi-sono.html">Chi sono</a>
-        <a href="come-funziona.html">Come funziona</a>
-        <a href="perche-esiste.html">Perché esiste</a>
-        <a href="scrivi.html">Scrivi una domanda</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contatto.html">Contatto</a>
-        <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
+<div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="benvenuto.html">Benvenuto</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="come-funziona.html">Come funziona</a>
+    <a href="perche-esiste.html">Perché esiste</a>
+    <a href="scrivi.html">Scrivi una domanda</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contatto.html">Contatto</a>
+    <a href="come-tratto-i-messaggi.html">Come tratto i messaggi</a>
+</div>
 
-        <div class="sidebar-audio">
-            <button id="play-audio" class="audio-icon">
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 9v6"></path>
-                    <path d="M9 7v10"></path>
-                    <path d="M13 5v14"></path>
-                    <path d="M17 7v10"></path>
-                </svg>
-            </button>
-            <audio id="audio-player" src="audio/musica.mp3"></audio>
-        </div>
+<div class="hero">
+    <img src="immagini/hero-chisono.jpg" alt="Un'immagine che accompagna la pagina Chi sono">
+    <div class="hero-content">
+        <h1>Chi sono</h1>
+        <p>Una presentazione semplice e sincera, per conoscere il mio modo di ascoltare e accompagnare.</p>
     </div>
+</div>
 
-    <!-- HERO -->
-    <div class="hero">
-        <img src="immagini/hero-chisono.jpg" alt="Una presenza semplice e discreta, un invito a camminare insieme con calma">
-        <div class="hero-content">
-            <h1>Chi sono</h1>
-            <p>Una presenza semplice e discreta, che cammina accanto senza fretta e senza pressione.</p>
-        </div>
-    </div>
+<section class="pagina-testo">
+    <h2>Il mio modo di esserci</h2>
+    <p>
+        Qui puoi conoscere meglio il mio modo di ascoltare, di accogliere ciò che vivi e di accompagnarti con calma.
+    </p>
+</section>
 
-    <!-- CONTENUTO -->
-    <section class="pagina-testo">
-
-        <h2>Il mio cammino</h2>
-        <p>
-            Da anni accompagno giovani nel loro percorso di crescita, ascolto e ricerca.
-            È un cammino fatto di presenza, rispetto e piccoli passi.
-        </p>
-
-        <h3>Il mio stile</h3>
-        <p>
-            Accoglienza, rispetto, gradualità. Ogni storia merita tempo, cura e uno spazio dove potersi esprimere senza fretta.
-        </p>
-
-        <h3>Il mio desiderio</h3>
-        <p>
-            Offrire uno spazio dove ciò che vivi possa trovare voce, con semplicità e senza giudizio.
-            Se vuoi, puoi iniziare da <a href="scrivi.html">una domanda</a>.
-        </p>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>Uno spazio di ascolto, con calma e presenza.</p>
-        <p><a href="contatto.html">Contattami</a></p>
-    </footer>
-
-    <!-- SCRIPT AUDIO -->
-    <script>
-    document.getElementById("play-audio").addEventListener("click", function() {
-        const audio = document.getElementById("audio-player");
-        audio.play();
-    });
-    </script>
+<footer class="footer">
+    <p>Uno spazio di ascolto, con calma e presenza.</p>
+    <p><a href="contatto.html">Contattami</a></p>
+</footer>
 
 </body>
 </html>
-
